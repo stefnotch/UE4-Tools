@@ -963,7 +963,7 @@ def FBX_Export(self,context):
                 
     #Export FBX
     bpy.ops.export_scene.fbx(check_existing=True,
-                             filepath= Folder + '/'+ FBX_name +'.fbx',
+                             filepath= os.path.join(Folder, FBX_name +'.fbx'),
                              filter_glob="*.fbx",
                              version='BIN7400',
                              use_selection=True, 
@@ -1089,7 +1089,7 @@ def FBX_Export_Character(self,context):
               
     #Export FBX
     bpy.ops.export_scene.fbx(check_existing=True,
-                             filepath= Folder + '/'+ FBX_name +'.fbx',
+                             filepath= os.path.join(Folder, FBX_name +'.fbx'),
                              filter_glob="*.fbx",
                              version='BIN7400',
                              use_selection=True, 
@@ -1159,7 +1159,7 @@ def FBX_Export_BakedAnimation(self,context):
                 
     #Export FBX
     bpy.ops.export_scene.fbx(check_existing=True,
-                             filepath= Folder + '/'+ FBX_name +'.fbx',
+                             filepath= os.path.join(Folder, FBX_name +'.fbx'),
                              filter_glob="*.fbx",
                              version='BIN7400',
                              use_selection=True, 
@@ -1232,7 +1232,7 @@ def FBX_Export_CameraAnimation(self,context):
     #Export FBX    
     
     bpy.ops.export_scene.fbx(check_existing=True,
-                             filepath= Folder + '/'+ FBX_name +'.fbx',
+                             filepath= os.path.join(Folder, FBX_name +'.fbx'),
                              filter_glob="*.fbx",
                              version='BIN7400',
                              use_selection=True, 
